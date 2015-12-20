@@ -13,5 +13,5 @@ for link in br.links():
     newurl = urlparse.urljoin(link.base_url,link.url)
     hostname = urlparse.urlparse(newurl).hostname
     path = urlparse.urlparse(newurl).path
-    newurl = str(hostname) + str(path)
+    newurl = "http://"+str(hostname) + str(path)
     print newurl
