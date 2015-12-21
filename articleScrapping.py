@@ -1,5 +1,7 @@
 import articletext
 
-url= "http://www.bloomberg.com/news/articles/2015-12-20/-star-wars-opens-with-record-breaking-238-million-ticket-haul"
+url= "http://www.bloomberg.com/news/articles/2015-12-18/goldman-sachs-21-of-the-world-s-most-interesting-charts"
 
-print articletext.getArticle(url)
+article = articletext.getArticle(url)
+
+print articletext.getKeywords(article)
